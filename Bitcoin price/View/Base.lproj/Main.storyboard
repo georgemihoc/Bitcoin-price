@@ -64,7 +64,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="103" height="34"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocorrectionType="no" textContentType="one-time-code"/>
+                                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numberPad" textContentType="one-time-code"/>
                                                 <connections>
                                                     <action selector="textFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Vvd-2r-AXh"/>
                                                 </connections>

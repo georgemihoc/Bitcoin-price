@@ -36,7 +36,21 @@ class ViewController: UIViewController, UIPickerViewDataSource {
         
     }
     @IBAction func textFieldChanged(_ sender: UITextField) {
-        convertPrice()
+        if convertTextfield.text!.isNumeric {
+            convertPrice()
+        }
+        else{
+            // create the alert
+            let alert = UIAlertController(title: "Error", message: "Please insert valid numbers.", preferredStyle: UIAlertController.Style.alert)
+
+            // add an action (button)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+            
+            convertTextfield.text = ""
+        }
     }
     func convertPrice(){
         if convertTextfield.text != ""{
@@ -82,5 +96,12 @@ extension ViewController : ServiceDelegate{
     
     func didFailWithError(error: Error) {
         print(error)
+    }
+}
+extension String {
+    var isNumeric: Bool {
+//        guard self.count > 0 else { return false }
+        let nums: Set<Character> = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+        return Set(self).isSubset(of: nums)
     }
 }
