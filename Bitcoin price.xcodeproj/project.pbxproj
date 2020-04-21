@@ -13,6 +13,9 @@
 		5E36A76F244F3B41005AA061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E36A76D244F3B41005AA061 /* Main.storyboard */; };
 		5E36A771244F3B42005AA061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E36A770244F3B42005AA061 /* Assets.xcassets */; };
 		5E36A774244F3B42005AA061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E36A772244F3B42005AA061 /* LaunchScreen.storyboard */; };
+		5E36A780244F437E005AA061 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36A77F244F437E005AA061 /* Service.swift */; };
+		5E36A782244F4715005AA061 /* BitcoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36A781244F4715005AA061 /* BitcoinData.swift */; };
+		5E36A784244F484A005AA061 /* Bitcoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E36A783244F484A005AA061 /* Bitcoin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		5E36A770244F3B42005AA061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E36A773244F3B42005AA061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E36A775244F3B42005AA061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E36A77F244F437E005AA061 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		5E36A781244F4715005AA061 /* BitcoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinData.swift; sourceTree = "<group>"; };
+		5E36A783244F484A005AA061 /* Bitcoin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bitcoin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		5E36A766244F3B41005AA061 /* Bitcoin price */ = {
 			isa = PBXGroup;
 			children = (
+				5E36A77E244F4333005AA061 /* Model */,
+				5E36A77D244F432C005AA061 /* Service */,
+				5E36A77C244F4323005AA061 /* Controller */,
+				5E36A77B244F430E005AA061 /* View */,
 				5E36A767244F3B41005AA061 /* AppDelegate.swift */,
 				5E36A769244F3B41005AA061 /* SceneDelegate.swift */,
-				5E36A76B244F3B41005AA061 /* ViewController.swift */,
-				5E36A76D244F3B41005AA061 /* Main.storyboard */,
 				5E36A770244F3B42005AA061 /* Assets.xcassets */,
-				5E36A772244F3B42005AA061 /* LaunchScreen.storyboard */,
 				5E36A775244F3B42005AA061 /* Info.plist */,
 			);
 			path = "Bitcoin price";
+			sourceTree = "<group>";
+		};
+		5E36A77B244F430E005AA061 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5E36A772244F3B42005AA061 /* LaunchScreen.storyboard */,
+				5E36A76D244F3B41005AA061 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E36A77C244F4323005AA061 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5E36A76B244F3B41005AA061 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5E36A77D244F432C005AA061 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5E36A77F244F437E005AA061 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		5E36A77E244F4333005AA061 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E36A781244F4715005AA061 /* BitcoinData.swift */,
+				5E36A783244F484A005AA061 /* Bitcoin.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E36A784244F484A005AA061 /* Bitcoin.swift in Sources */,
 				5E36A76C244F3B41005AA061 /* ViewController.swift in Sources */,
+				5E36A782244F4715005AA061 /* BitcoinData.swift in Sources */,
+				5E36A780244F437E005AA061 /* Service.swift in Sources */,
 				5E36A768244F3B41005AA061 /* AppDelegate.swift in Sources */,
 				5E36A76A244F3B41005AA061 /* SceneDelegate.swift in Sources */,
 			);
