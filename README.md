@@ -1,4 +1,4 @@
 # Bitcoin-price
 iOS real-time Bitcoin price index and converter app using swift 5
 
-![Uploading Simulator Screen Shot - iPhone 11 Pro Max - 2020-04-21 at 21.24.52.png…]()
+https://user-images.githubusercontent.com/45356920/81175183-bfe72e80-8fab-11ea-809b-3023ac4e44f4.png
